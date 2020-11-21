@@ -27,6 +27,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - run: |
+          npm install
+      - run: |
+          npm run build
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
